@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Love Story ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<!-- Landing Section -->
+<section class="section active" id="home">
+    <h1>Hello Thilakku!!❤️</h1>
+    <p>Welcome to our little love world...</p>
+    <button onclick="nextSection('memories')">Our Beautiful Love Journey Begins with Cute Bond💕</button>
+</section>
+
+
+<!-- Memories Section -->
+<section class="section" id="memories">
+    <h2>Our Beautiful Memories 📸</h2>
+    <div class="gallery">
+        <img src="images/photo1.jpg">
+        <img src="images/photo2.jpg">
+        <img src="images/photo3.jpg">
+    </div>
+    <button onclick="nextSection('quiz')">Next 💌</button>
+</section>
+
+
+
+<!-- Quiz Section -->
+<section class="section" id="quiz">
+    <h2>Let see,How well do you us? 😘</h2>
+
+    <div id="quizContainer"></div>
+
+    <p id="quizResult"></p>
+
+    <button onclick="nextQuestion()" id="nextQuestionBtn" style="display:none;">
+        Next 💕
+    </button>
+
+    <p id="finalScore"></p>
+</section>
+
+<!-- Memory Timeline Section -->
+<section class="section" id="timeline">
+    <h2>Our Beautiful Journey ❤️</h2>
+
+    <div class="timeline-grid">
+
+         <div class="timeline-item wide">
+        <img src="images/photo4.jpg">
+        <p><b>❤️Beach Walk</b><br>
+        That evening by the beach felt like a dream.
+The waves were loud, but somehow everything felt peaceful when I was walking beside you.
+Holding your hand, feeling the breeze, and talking about random things —
+I wished that moment would never end..</p>
+    </div>
+
+      <div class="timeline-item center-item">
+        <img src="images/photo5.jpg">
+        <p><b>💬 First Ghibli Art</b><br>
+        What a cute photo! Okay, I'll give it to you... you're definitely the cute one here.
+We turned into characters from a Studio Ghibli movie,
+but honestly…
+our real story is even more beautiful.
+
+That art wasn’t just cute —
+it captured the softness, comfort, and warmth we share every day.</p>
+    </div>
+
+         <div class="timeline-item center-item">
+        <img src="images/photo6.jpg">
+        <p><b>🎁 Boat ride</b><br>
+        That boat ride felt like we were floating in our own little world.
+The water was calm, the breeze was soft, and you were sitting next to me —
+and somehow, that was enough.
+
+I didn’t need anything else in that moment.
+Just you, the sound of water, and the quiet happiness in my heart.</p>
+    </div>
+
+        <div class="timeline-item">
+        <img src="images/bg.jpg">
+        <p><b>📷 First Trip</b><br>
+        Our first trip together felt like freedom.
+New place, new views —
+but the best part was experiencing everything with you.
+
+Every step we took, every picture we clicked,
+every random laugh —
+it all became a memory I’ll hold close forever.</p>
+    </div>
+
+        <div class="timeline-item wide">
+        <img src="images/photo7.jpg">
+        <p><b>🌸 Favorite Memory</b><br>
+        It’s hard to choose just one moment,
+because every second with you feels special.
+
+But my favorite memory isn’t a big event —
+it’s the simple moments.
+The way you look at me,
+the way we laugh at nothing,
+and the way everything feels calm when you’re near.</p>
+    </div>
+
+    </div>
+
+    <button onclick="nextSection('secret')">Next 💌</button>
+</section>
+
+<!-- Secret Love Letter -->
+<section class="section" id="secret">
+    <h2>Click only if you really love me 😌</h2>
+
+    <button onclick="revealLetter()">Click Here 💖</button>
+
+    <div id="hiddenLetter" class="love-frame">
+
+        <h3>My Heart to You 💕</h3>
+        <p>
+            From the moment you walked into my life, everything changed in the most beautiful way.<br>
+You didn’t just become my boyfriend… you became my peace, my happiness, and my safe place.<br><br>
+
+Every conversation with you feels like home. Every laugh we share becomes my favorite memory.<br>
+Even on difficult days, just thinking about you makes everything feel lighter.<br><br>
+
+Thank you for loving me the way you do.<br>
+Thank you for being patient with me, supporting me, and believing in me.<br>
+
+I don’t know what the future holds…<br>
+but I know I want you in every chapter of my life.<br><br>
+
+You are not just my Valentine today.<br>
+You are my always. ❤️<br>
+        </p>
+
+        <button onclick="nextSection('game')">Next 🎮</button>
+    </div>
+</section>
+
+<!-- Surprise Game Section -->
+<section class="section" id="game">
+    <h2>Choose Your Surprise 😘</h2>
+
+    <button onclick="showSurprise('kiss')">💋 Kiss</button>
+    <button onclick="showSurprise('chocolate')">🍫 Chocolate</button>
+    <button onclick="showSurprise('future')">💍 Future Surprise</button>
+
+    <div id="surpriseMessage"></div>
+
+    <button onclick="nextSection('future')">Next 💑</button>
+</section>
+
+<!-- Our Future Page -->
+<section class="section" id="future">
+    <h2>Our Beautiful Future 💖</h2>
+
+    <div class="future-grid">
+
+        <div class="future-card">
+            Our future?<br>
+            Morning coffee together. ☕<br>
+            Random selfies. 📸<br>
+            Late-night talks about nothing and everything.
+        </div>
+
+        <div class="future-card">
+            Laughing at inside jokes that no one else understands.
+        </div>
+
+        <div class="future-card">
+            🌍 One day, I want us to travel the world together —<br>
+            holding hands in new cities, taking silly pictures,<br>
+            and collecting memories instead of things.
+        </div>
+
+        <div class="future-card">
+            🏡 I imagine our future home filled with laughter,<br>
+            late-night talks, soft music playing in the background,<br>
+            and peace that only we create together.
+        </div>
+
+        <div class="future-card">
+            😂 Fighting over the TV remote,<br>
+            stealing food from each other’s plate,<br>
+            and still saying “sorry” with a hug.
+        </div>
+
+        <div class="future-card">
+            💼 Celebrating your successes,<br>
+            standing beside you in tough times,<br>
+            and growing stronger together every year.
+        </div>
+
+        <div class="future-card">
+            💖 No matter where life takes us,<br>
+            I just want one thing —<br>
+            to walk through it with you.
+        </div>
+
+        <div class="future-card">
+            Growing old together,<br>
+            still teasing each other.
+        </div>
+
+        <div class="future-card highlight-card">
+            That’s the future I want.<br>
+            With you. ❤️
+        </div>
+
+    </div>
+
+    <p id="countdown"></p>
+
+    <button onclick="nextSection('final')">Final Surprise 💍</button>
+</section>
+
+    
+
+
+
+
+
+<!-- Final Section -->
+<section class="section" id="final">
+    <h2>Will You Be My Valentine Forever? 💖</h2>
+    <button onclick="alert('Yayyyyy ❤️ I love you!')">YES 💕</button>
+    <button onclick="alert('Hehe 😌 I knew it!')">Definitely YES 😘</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
