@@ -222,6 +222,14 @@ button:hover {
     font-weight: bold;
 }
 
+@media (max-width: 768px) {
+    .timeline-item img {
+        max-height: 250px;
+        object-fit: cover;
+    }
+}
+
+
 
 
 
